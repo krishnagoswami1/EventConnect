@@ -51,8 +51,13 @@ def search(search_query, num):
 
     for hit in hits:
         print()
+        st.markdown(f'''
+    #### {hit.payload['event_title']}
+    **{hit.payload['event_org']}** \n 
+    **Date:** {hit.payload['date']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **location:** {hit.payload['loc']}
+''')
         st.write(hit.payload['event_desc'])
-        st.write(hit.score)
+        # st.write(hit.score)
 
 
 st.title("EventConnect")
