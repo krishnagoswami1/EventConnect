@@ -85,7 +85,7 @@ def file_main():
     st.sidebar.header("Filters")
     options = st.sidebar.multiselect(
         'Tell your preferences:', 
-        ['Tech', 'eDC', 'IGTS', "Photography", "DevClub","Enactus", "Design", "Art", "Mathematics", "Computer Science","OCS", "ARIES", "Academic",'Cultural],
+        ['Tech', 'eDC', 'IGTS', "Photography", "DevClub","Enactus", "Design", "Art", "Mathematics", "Computer Science","OCS", "ARIES", "Academic",'Cultural'],
         ['Tech', 'eDC']
     )
     
