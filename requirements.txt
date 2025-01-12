@@ -1,9 +1,4 @@
 streamlit
 qdrant-client
 sentence-transformers
-hashlib
-sqlite3
-datetime
-time
-sklearn
-numpy
+
