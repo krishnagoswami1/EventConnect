@@ -13,6 +13,7 @@ class EventSearch:
         self.encoder = SentenceTransformer("all-MiniLM-L6-v2")
         self.client = QdrantClient(url = st.secrets['QDRANT_URL'], api_key =  st.secrets['QDRANT_KEY'])
         st.write(st.secrets['QDRANT_URL'])
+        st.write(st.secrets['QDRANT_KEY'])
         self.documents = None
         self.setup_collection()
         
