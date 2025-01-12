@@ -12,6 +12,7 @@ class EventSearch:
     def __init__(self):
         self.encoder = SentenceTransformer("all-MiniLM-L6-v2")
         self.client = QdrantClient(url = st.secrets['QDRANT_URL'], api_key =  st.secrets['QDRANT_KEY'])
+        st.write(st.secrets['QDRANT_URL'])
         self.documents = None
         self.setup_collection()
         
