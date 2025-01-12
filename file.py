@@ -86,7 +86,7 @@ def file_main():
     options = st.sidebar.multiselect(
         'Tell your preferences:', 
         ['Tech', 'eDC', 'IGTS', "Photography", "DevClub","Enactus", "Design", "Art", "Mathematics", "Computer Science","OCS", "ARIES", "Academic",'Cultural],
-        ['Tech', 'eDC]
+        ['Tech', 'eDC']
     )
     
     # Search weight slider
