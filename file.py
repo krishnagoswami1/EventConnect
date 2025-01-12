@@ -11,7 +11,7 @@ from qdrant_client.http.models import PointStruct
 class EventSearch:
     def __init__(self):
         self.encoder = SentenceTransformer("all-MiniLM-L6-v2")
-        self.client = QdrantClient(url = st.secrets.QDRANT.QDRANT_URL, api_key =  st.secrets.QDRANT.QDRANT_KEY)
+        self.client = QdrantClient(url = st.secrets['QDRANT_URL'], api_key =  st.secrets['QDRANT_KEY'])
         self.documents = None
         self.setup_collection()
         
