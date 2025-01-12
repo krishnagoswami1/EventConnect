@@ -7,7 +7,7 @@ import json
 import time
 
 st.set_page_config(
-    page_title="EventConnect",page_icon=":epsilon:"       
+    page_title="EventConnect",page_icon=":dart:"       
 )
 def init_db():
     conn = sqlite3.connect('users.db')
