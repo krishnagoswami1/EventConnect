@@ -75,7 +75,7 @@ class EventSearch:
         return results
 
 def file_main():
-    st.title("EventConnect")
+    st.title("EventConnect - IITD")
     
     # Initialize search engine
     search_engine = EventSearch()
