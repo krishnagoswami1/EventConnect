@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
+import numpy as np
 from qdrant_client.http import models
 from qdrant_client.http.models import PointStruct
 
